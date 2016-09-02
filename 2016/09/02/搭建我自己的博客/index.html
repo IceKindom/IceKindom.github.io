@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+
+
+  <html class="light page-post">
+
+
+<head>
+  <meta charset="utf-8">
+  
+  <title>搭建我自己的博客 | IceKindom</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  
+    <meta name="keywords" content="IceKindom,网站开发,编码爱好者" />
+  
+
+  <meta name="description" content="起因在某一个无聊下午，我突然想要自己搞一个博客，但是我有觉得用新浪或者什么别人的博客很没有成就感，所以就想要作一个自己的博客。通过查网上的一些资料之后，我想要使用github搭配hexo框架来实现自己的博客，然后就开始着手准备搭建自己的博客了。
+
+过程开始和过程我还记的我从下午三点一直到晚上八点，各种研究和看别人的经验帖（不过网上经验帖确实也 是比较多），然后终于搭建出了自己的一个博客，然而好像所">
+<meta property="og:type" content="article">
+<meta property="og:title" content="搭建我自己的博客">
+<meta property="og:url" content="http://yoursite.com/2016/09/02/搭建我自己的博客/index.html">
+<meta property="og:site_name" content="IceKindom">
+<meta property="og:description" content="起因在某一个无聊下午，我突然想要自己搞一个博客，但是我有觉得用新浪或者什么别人的博客很没有成就感，所以就想要作一个自己的博客。通过查网上的一些资料之后，我想要使用github搭配hexo框架来实现自己的博客，然后就开始着手准备搭建自己的博客了。
+
+过程开始和过程我还记的我从下午三点一直到晚上八点，各种研究和看别人的经验帖（不过网上经验帖确实也 是比较多），然后终于搭建出了自己的一个博客，然而好像所">
+<meta property="og:updated_time" content="2016-09-02T03:40:34.078Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="搭建我自己的博客">
+<meta name="twitter:description" content="起因在某一个无聊下午，我突然想要自己搞一个博客，但是我有觉得用新浪或者什么别人的博客很没有成就感，所以就想要作一个自己的博客。通过查网上的一些资料之后，我想要使用github搭配hexo框架来实现自己的博客，然后就开始着手准备搭建自己的博客了。
+
+过程开始和过程我还记的我从下午三点一直到晚上八点，各种研究和看别人的经验帖（不过网上经验帖确实也 是比较多），然后终于搭建出了自己的一个博客，然而好像所">
+
+  
+
+  
+    <link rel="icon" href="/favicon.ico">
+  
+
+  <link href="/css/styles.css?v=028c63b1" rel="stylesheet">
+
+
+  
+    <link rel="stylesheet" href="/css/personal-style.css">
+  
+
+  
+
+  
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?57e94d016e201fba3603a8a2b0263af0";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+</head>
+
+<body>
+
+
+  
+    <span id="toolbox-mobile" class="toolbox-mobile">盒子</span>
+  
+
+  <div class="post-header CENTER">
+   
+  <div class="toolbox">
+    <a class="toolbox-entry" href="/">
+      <span class="toolbox-entry-text">盒子</span>
+      <i class="icon-angle-down"></i>
+      <i class="icon-home"></i>
+    </a>
+    <ul class="list-toolbox">
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/archives/"
+            target="_self"
+            >
+            博客
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/category/"
+            target="_self"
+            >
+            分类
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/tag/"
+            target="_self"
+            >
+            标签
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/link/"
+            target="_self"
+            >
+            友链
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/about/"
+            target="_self"
+            >
+            关于
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/atom.xml"
+            target="_blank"
+            >
+            RSS
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/search/"
+            target="_self"
+            >
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  </div>
+
+
+</div>
+
+
+  <div id="toc" class="toc-article">
+    <strong class="toc-title">Posts List</strong>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#起因"><span class="toc-text">起因</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#过程"><span class="toc-text">过程</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#开始和过程"><span class="toc-text">开始和过程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#最终"><span class="toc-text">最终</span></a></li></ol></li></ol>
+  </div>
+
+
+
+<div class="content content-post CENTER">
+   <article id="post-搭建我自己的博客" class="article article-type-post" itemprop="blogPost">
+  <header class="article-header">
+    <h1 class="post-title">搭建我自己的博客</h1>
+
+    <div class="article-meta">
+      <span>
+        <i class="icon-calendar"></i>
+        <span>2016.09.02</span>
+      </span>
+
+      
+        <span class="article-author">
+          <i class="icon-user"></i>
+          <span>John Doe</span>
+        </span>
+      
+
+      
+
+
+      
+        <span>
+          <i class="icon-comment"></i>
+          <a href="http://www.icekindom.com/2016/09/02/搭建我自己的博客/#disqus_thread"></a>
+        </span>
+      
+
+    </div>
+  </header>
+
+  <div class="article-content">
+    
+      <h1 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h1><p>在某一个无聊下午，我突然想要自己搞一个博客，但是我有觉得用新浪或者什么别人的博客很没有成就感，所以就想要作一个自己的博客。通过查网上的一些资料之后，我想要使用github搭配hexo框架来实现自己的博客，然后就开始着手准备搭建自己的博客了。</p>
+<hr>
+<h1 id="过程"><a href="#过程" class="headerlink" title="过程"></a>过程</h1><h2 id="开始和过程"><a href="#开始和过程" class="headerlink" title="开始和过程"></a>开始和过程</h2><p>我还记的我从下午三点一直到晚上八点，各种研究和看别人的经验帖（不过网上经验帖确实也 是比较多），然后终于搭建出了自己的一个博客，然而好像所有事情都有一个but，这件事情好像 没有我想象中的那么简单（尽管我现在觉得相当简单。。。）。第一次搭建，我把各种出现的bug全部消灭之后，终于只剩下最后一步部署，当我激动的输入进去hexo d的时候，然后发现没有错，再兴奋的去浏览器输入的时候，恍然大悟，我申请的名字怎么可能被访问（我当时的名字是IceKindom，其实也是我看的两篇博客都没有规范名字的原因），然后我觉得再搞一次非常快的，毕竟我已经做过一遍了，而且博客的主题和相关的内容都已经挑选和修改好了，然后我就又开始了下一次的试炼（我当时还是没有命名意识）。结果依然不行，当时整个人成蒙逼状，也不想再看其他的博客了，主要是当时高了那么久，本来以为一定成功的两次都没有成功，所以当时十分的心累，然后我在尝试第三遍的时候，实在是累的不行，然后开始做了一些其他的事情，然后到了宿舍该锁门的时候就回寝了。</p>
+<h2 id="最终"><a href="#最终" class="headerlink" title="最终"></a>最终</h2><p>接下来的两天天气非常好，然后和同学出去玩了玩，就到了今天晚上。我再次来到实验室，本 来今天只是为了把现在手头的项目的拦截器和有各种其他的东西配置好（即将交工，之前一直没有配置拦截器，节省测试时间）。然后在我做完这些东西之后，还是有很多的时间，然后我就又想起了这件事情，这一次我心平气和下来了，毕竟不像上次那么心累。然后上网再搜索了一下资料，看看自己到底是哪个步骤出问题了，最后发现原来是名字的问题，github对于名字有自己的  要求，然后之前我看的那几篇博客根本没有说这一点，所以我走了很多的弯路。知道了问题所在，我基本上不菲什么时间就把博客搭建好了，看着现在的博客，感觉自己有一点哭笑不得，竟然在这么一点小问题上面困了这么长时间，也让我懂了，在问题解决不了的时候，一定要耐下心来再去找看自己到底是哪一步出现了问题，然后一步一步核对，一定能找到问题的所在。如果实在静不下心来找，那就做一些其它的事情，等过一段时间再来看这个问题，说不定一切就都迎刃而解了。</p>
+<hr>
+
+    
+  </div>
+</article>
+
+</div>
+
+
+  <div class="text-center donation">
+    <div class="inner-donation">
+      <span class="btn-donation">支持一下</span>
+      <div class="donation-body">
+        <div class="tip text-center">扫一扫，支持forsigner</div>
+        <ul class="theme.donation.items.length">
+        
+          <li class="item">
+            <img src="/images/qr-wechat.png" alt="">
+          </li>
+        
+          <li class="item">
+            <img src="/images/qr-alipay.png" alt="">
+          </li>
+        
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <a id="backTop" class="back-top">
+    <i class="icon-angle-up"></i>
+  </a>
+
+
+
+
+  <div class="modal" id="modal">
+  <span id="cover" class="cover hide"></span>
+  <div id="modal-dialog" class="modal-dialog hide-dialog">
+    <div class="modal-header">
+      <span id="close" class="btn-close">Close</span>
+    </div>
+    <hr>
+    <div class="modal-body">
+      <ul class="list-toolbox">
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/archives/"
+              target="_self"
+              >
+              博客
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/category/"
+              target="_self"
+              >
+              分类
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/tag/"
+              target="_self"
+              >
+              标签
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/link/"
+              target="_self"
+              >
+              友链
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/about/"
+              target="_self"
+              >
+              关于
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/atom.xml"
+              target="_blank"
+              >
+              RSS
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/search/"
+              target="_self"
+              >
+              搜索
+            </a>
+          </li>
+        
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+
+  
+      <div class="fexo-comments comments-post">
+    
+  <section class="disqus-comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+  </section>
+
+  <script>
+    var disqus_shortname = 'forsigner';
+    
+    var disqus_url = 'http://yoursite.com/2016/09/02/搭建我自己的博客/';
+    
+    (function(){
+      var dsq = document.createElement('script');
+      dsq.type = 'text/javascript';
+      dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+
+  <script id="dsq-count-scr" src="//forsigner.disqus.com/count.js" async></script>
+
+
+
+    
+
+
+
+
+  </div>
+
+  
+
+  <script type="text/javascript">
+  function loadScript(url, callback) {
+    var script = document.createElement('script')
+    script.type = 'text/javascript';
+
+    if (script.readyState) { //IE
+      script.onreadystatechange = function() {
+        if (script.readyState == 'loaded' ||
+          script.readyState == 'complete') {
+          script.onreadystatechange = null;
+          callback();
+        }
+      };
+    } else { //Others
+      script.onload = function() {
+        callback();
+      };
+    }
+
+    script.src = url;
+    document.getElementsByTagName('head')[0].appendChild(script);
+  }
+
+  window.onload = function() {
+    loadScript('/js/bundle.js?235683', function() {
+      // load success
+    });
+  }
+</script>
+
+</body>
+</html>
